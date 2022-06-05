@@ -1,0 +1,88 @@
+<div class="container-fluid text-center table">
+<div class="row col-md-12 ">
+  <div class="col-xs-12" >
+    <p class="text-center">Our Team {{data}}</p>
+    <div class="form-group " style="width: 400px;">
+      <input type="text" class="form-control" placeholder="Search... Enter your employee details" [(ngModel)]="filterTerm" />
+    </div>
+    <table class="table table-striped" border="2">
+        <thead>
+          <tr  class="head">
+            <th scope="col"> Name  </th>
+            <th scope="col"> Surname  </th>
+            <th scope="col">Age</th>
+            <th scope="col">City</th>
+            <th scope="col">Email</th>
+            <th scope="col">Salary</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of detail| filter: filterTerm">
+            <th scope="row">{{data.name}}</th>
+            <th scope="row"> {{data.surname}} </th>
+            <td scope="row">{{data.age}}</td>
+            <td scope="row">{{data.city}} </td>
+            <td scope="row">{{data.email}} </td>
+            <td scope="row">{{data.salary}} </td>
+
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid">
+ <div class="row team">
+   <h1 class="text-center p-4">Our Team Members</h1>
+<div class="col-xs-12 col-md-3 photo  ">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/photo/photo-30.jpeg" class="card-img-top rounded-circle" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">David</h5>
+      <p class="card-text">Profile: Marketting</p>
+      <p>You can follw us</p>
+      <h6><i class="bi bi-google"></i> <i class="bi bi-facebook"></i> <i class="bi bi-youtube"></i> <i class="bi bi-apple"></i> </h6>
+      
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-md-3 photo ">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/photo/photo-31.jpeg" class="card-img-top rounded-circle" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">John</h5>
+      <p class="card-text">Profile: Food-Enginner</p>
+      <p>You can follw us</p>
+      <h6><i class="bi bi-google"></i> <i class="bi bi-facebook"></i> <i class="bi bi-youtube"></i> <i class="bi bi-apple"></i> </h6>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-md-3 photo">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/photo/photo-32.jpeg" class="card-img-top rounded-circle" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Michael</h5>
+      <p class="card-text">Profile:Designer</p>
+      <p>You can follw us</p>
+      <h6><i class="bi bi-google"></i> <i class="bi bi-facebook"></i> <i class="bi bi-youtube"></i> <i class="bi bi-apple"></i> </h6>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-md-3 photo">
+  <div class="card" style="width: 18rem;">
+    <img src="assets/photo/photo-34.jpeg" class="card-img-top rounded-circle" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Rose</h5>
+      <p class="card-text">Profile:CEO</p>
+      <p>You can follw us</p>
+      <h6><i class="bi bi-google"></i> <i class="bi bi-facebook"></i> <i class="bi bi-youtube"></i> <i class="bi bi-apple"></i> </h6>
+    </div>
+  </div>
+</div>
+ </div>
+</div>

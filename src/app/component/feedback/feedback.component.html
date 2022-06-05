@@ -1,0 +1,93 @@
+<div class="container-fluid">
+  <div class="row p-5 bg-light">
+    <h1 class='text-center justify-content-center' >Contact us</h1>
+ <div class="col-md-6 col-xs-12 mt-5">
+  <div class="card ">
+    <div class="card-body">
+      <form #contactForm="ngForm"  (ngSubmit)="onSubmit(contactForm)" novalidate>
+        <div class="col-md-12 row">
+          <div class="form-group col-md-10">
+            <label class="col-form-label"> Name</label>
+            <input type="text" placeholder="Enter Your  Name" pattern="^[A-Za-z]*$" required #lname="ngModel"
+              ngModel class="form-control" name="lastname">
+            <div *ngIf="lname.touched && !lname.valid">
+              <div *ngIf="lname.errors?.['required']" class="text-danger">
+              Name is required
+              </div>
+              <div *ngIf="lname.errors?.['pattern']" class="text-danger">
+                Only Alphabates are required
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-10">
+            <label class="col-form-label">Contact Number</label>
+            <input type="text" placeholder="Enter Your Number" pattern="^((\\+91-?)|0)?[0-9]{10}$" required #phone="ngModel" ngModel
+              class="form-control" name="contact">
+              <div *ngIf="phone.touched && !phone.valid">
+                <div *ngIf="phone.errors?.['required']" class="text-danger">
+                Number is required
+                </div>
+                <div *ngIf="phone.errors?.['pattern']" class="text-danger">
+                  only 10 digit are required
+                </div>
+              </div>
+          </div>
+          <div class="form-group col-md-10">
+            <label class="col-form-label">Email</label>
+            <input type="text" placeholder="Enter Your Email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required #email="ngModel" ngModel
+              class="form-control" name="email">
+          </div>
+
+          <div *ngIf="email.touched && !email.valid">
+            <div *ngIf="email.errors?.['required']" class="text-danger">
+            Email is required 
+            </div>
+            <div *ngIf="email.errors?.['pattern']" class="text-danger">
+              put a valid email
+            </div>
+          </div>
+          <div class="form-group col-md-10">
+            <label  class="col-form-label">Textarea</label>
+            <textarea class="form-control" name="message" placeholder="Enter Your message" pattern='^[A-Z][a-zA-Z]*$'required #message="ngModel" ngModel ></textarea>
+          </div>
+            <div *ngIf="message.touched  && !message.valid" >
+           <div *ngIf="message.errors?.['required']" class="text-danger">
+            Message is required
+           </div>
+           <div *ngIf="email.errors?.['pattern']" class="text-danger">
+            put a valid email
+          </div>
+          </div> 
+         
+          <div class="form-group col-md-10">
+            <button  class="btn mt-3 p-3" [disabled]="!contactForm.valid">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+ 
+ </div>
+ <div class="col-md-6 col-xs-12 mt-4">
+  <h3 class="d-flex text-center justify-content-center align-items-center">Here is your contact you can add some details</h3>
+  <div class="ms-5 p-5 con d-flex"><i class="bi bi-geo-alt"></i> <p>plot no. 242,noida U.P.</p></div>
+  <div class="ms-5 p-5 con d-flex"><i class="bi bi-envelope"></i> <P>help123@gmail.com</P></div>
+  <div  class="ms-5 p-5 con d-flex"><i class="bi bi-phone"></i><P>+0129 - 7894 5561</P></div>
+   </div>
+  </div>
+  <div class="row bg-light">
+ <div class="col-xs-12 text-center" *ngFor="let day of weekday">
+<ng-container *ngIf="(day=='Saturday'||day=='Sunday'); else workingday">
+  <h3>{{day}} is a weekday </h3>
+</ng-container>
+<ng-template #workingday>
+   <h3>{{day}} is a weekday not weekend</h3>
+</ng-template>
+ </div>
+  </div>
+  
+</div>
+

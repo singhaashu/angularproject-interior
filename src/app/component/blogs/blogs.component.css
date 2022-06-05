@@ -1,0 +1,51 @@
+.blogs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #e5e4e2;
+    
+}
+.blogs h1{
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orangered;
+}
+.blogs p{
+    color: blue;
+    font-size: 20px;
+}
+.blogs h3{
+    color: orangered;
+
+}
+.blogs1 h5{
+    color: brown;
+    font-family: monospace;
+    
+    
+}
+.blogs1{
+    margin-bottom: 50px;
+}
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  .photo {
+    animation: drop-in 1500ms;
+  }
+  .btn{
+    color: white;
+    background-color: orange;
+  }

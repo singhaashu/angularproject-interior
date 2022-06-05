@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first{
+   
+    background-color: #e5e4e2;
+  
+}
+.first-ab h1{
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+.about-img{
+    margin: 100px auto;
+    text-align: center;
+}
+.about-p{
+    margin: 150px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-bg{
+    background:rgba(0, 0, 0, .3)url(../../assets/photo/bg1.jpeg);
+    background-size: cover;
+   background-blend-mode: darken; 
+    text-align: center;
+    color: white;
+    height: 100%;
+    margin-top: 0;
+}
+.about-team{
+    margin: 50px auto;
+}
+.about-bak h2{
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.job h1{
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: orangered;margin-bottom: 10px;
+}
+.job{
+    text-align: center;
+}
+.job h3{
+    color: blue;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .3);
+    
+}

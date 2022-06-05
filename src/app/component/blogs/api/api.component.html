@@ -1,0 +1,21 @@
+
+      <div *ngIf="newsData">
+      <div class="container-fluid">
+        <div class="row  d-flex justify-content-center">
+          <h1 class='text-center p-3' >Latest News</h1>
+          <div class="d-flex align-item-stretch col-md-4 col-sm-12 " *ngFor="let n of newsData">
+  
+            <div>
+              <div class="card p-2 bg-light" style="width:26rem">      
+                <h4>{{n.title}} </h4>
+              <p>{{n.description}} </p>
+              <img [src]='n.urlToImage ' style="width: 100%; height: 200px;" />
+              </div>
+          </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+ 

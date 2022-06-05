@@ -1,0 +1,38 @@
+.con i  {
+    font-weight: bolder;
+    background-color: orange;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 15px ;
+}
+.con{
+    justify-content:center;
+    align-items: center;
+}
+.con p{
+    font-size: 20px;
+   margin: 10px; 
+   margin-left: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.con p:hover{
+    color: orange;
+}
+.btn{
+    color: white;
+    background-color: orange;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+}
+.card{
+    background: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.8);
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

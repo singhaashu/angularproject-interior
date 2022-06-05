@@ -1,0 +1,31 @@
+.con{
+    background:rgba(0,0,0,.6) url(/assets/photo/bg1.jpeg) ;
+    background-blend-mode: dark;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.con h3{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn{
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.btn:hover{
+    color: white;
+    background-color: orangered;
+}
+.form-control{
+    border-radius: 20px;
+  }
+
+  .form-control:hover{
+    box-shadow: 0 4px 8px 0px orange;
+  }

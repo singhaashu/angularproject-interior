@@ -1,0 +1,10 @@
+.head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orangered;
+    margin: 50px;
+}
+.heading button h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: red;
+}

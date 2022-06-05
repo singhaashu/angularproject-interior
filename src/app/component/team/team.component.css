@@ -1,0 +1,50 @@
+.table{
+    text-align: center;
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.head{
+    background-color: brown;
+    color: white;
+}
+.table p{
+    font-size: 30px;
+    color: orangered;
+}
+.team h1{
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.photo  img{
+    padding: 10px;
+    
+    border-left: 2px solid blue;
+    border-right: 2px solid green;
+    border-top: 2px solid yellow;
+}
+.photo p{
+    color: green;
+    font-weight: Bold;
+}
+.photo h6 i{
+    
+    margin: 20px;
+    font-size: 20px;
+}
+.card:hover{
+    background-color: orange;
+    color: white;
+}
+.form-group{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
